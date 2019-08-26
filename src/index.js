@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './css/navbar.css';
+import './css/homeTop.css';
+import './css/homeMidle.css';
+import './css/homeBottom.css';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

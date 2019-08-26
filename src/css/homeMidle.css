@@ -1,0 +1,159 @@
+.home__midle{
+    display: flex;
+    margin: 0 0 0 3.43rem;
+    height: 29.5rem;
+  }
+  .explanation{
+    display: flex;
+    background: #f5f6f8;
+    height: 14.38rem;
+    width: 46.56rem;
+    border-radius: 2.3rem;
+  }
+  .explanation__tetx{
+    margin : 3.13rem 0 3.13rem 2.38rem;
+    width: 30.94rem;
+  }
+  .text__header{
+    margin: 0;
+    font-size: 1.31rem;
+  }
+  .text__comment{
+    font-size: 1.1rem;
+    margin: 1.2rem 0;
+  }
+  .text__link{
+    font-size: 1rem;
+    color : #ff6f47;
+    text-decoration: none;
+  }
+  .explanation__symbol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 9.81rem;
+    width: 5rem;
+    margin: 3.13rem 1rem 3.13rem 0;
+    border-radius: 1rem;
+    color: #fff;
+    
+  }
+  .explanation__symbol--orange{
+    background: #ff6f47;
+  }
+  .explanation__symbol--blue{
+    background: #5c6aff;
+  }
+  .woman{
+    height: 29.5rem;
+    width: 20.63rem;
+    margin: 0 0 0 3.15rem;
+  }
+  
+  .calendar{
+    height: 9rem;
+    width: 46.56rem;
+    margin-top: 3.13rem ;
+  }
+  .calendar__option{
+    display: flex;
+    align-content: flex-start;
+    height: 4rem;
+  }
+  .option__date{
+    height: 2rem;
+    width: 8.75rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .option__button{
+    height: 2rem;
+    width: 2.4rem;
+    text-align: center;
+    background: #ff6f47;
+    border-width: 0px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+  }
+  .option__button--left{
+    border-radius: 1rem 0 0 1rem;
+  }
+  .option__button--right{
+    border-radius: 0 1rem 1rem 0;
+  }
+  .option__dropdown{
+    position: relative;
+    width: 7.25rem;
+    margin-left: 26.25rem;
+  }
+  .dropbtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    width: 7.25rem;
+    background: #fff;
+    border: 1.5px solid #a4abaf;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  .dropdown__content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    min-width: 7.25rem;
+    padding: 0;
+    margin-top:0; 
+    z-index: 1;
+  }
+  .dropdown__content a {
+    color: black; 
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown__content a:hover {
+    font-weight: bold;
+  }
+  .option__dropdown:hover .dropdown__content {
+    display: block;
+  }
+  
+  .calendar__progress{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    border-color: #555;
+  }
+  .progress{
+    display: flex;
+    justify-content: space-around;
+    height: 5rem;
+    width: 38rem;
+    color : #555;
+  }
+  .progress__date{
+    height: 5rem;
+    background: #fff;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+  }
+  .progress__date--disabled{
+    cursor: not-allowed;
+    color : #ccc;
+  }
+  .progress__button{
+    height: 2rem;
+    width: 7.25rem;
+    background: #fff;
+    border: 1.5px solid #a4abaf;
+    border-radius: 1rem;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 1.45rem;
+    outline: none;
+  }
