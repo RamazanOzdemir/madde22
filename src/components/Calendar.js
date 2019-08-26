@@ -51,14 +51,14 @@ const Calendar = () => {
                 </div>
                 <div style={{display:'flex'}}>
                     <button className='option__button option__button--left' onClick={prevWeek}>
-                        <i className='material-icons'>keyboard_arrow_left</i>
+                        <i className='material-icons' style={{fontSize:'1rem'}}>keyboard_arrow_left</i>
                     </button>
                     <button className='option__button option__button--right' onClick={nextWeek}>
-                        <i className='material-icons'>keyboard_arrow_right</i>
+                        <i className='material-icons' style={{fontSize:'1rem'}}>keyboard_arrow_right</i>
                     </button>
                 </div>
                 <div className='option__dropdown'>
-                    <button className='dropbtn'>Week <i className='material-icons'>keyboard_arrow_down</i></button>
+                    <button className='dropbtn'>Week <i className='material-icons' style={{fontSize:'1rem'}}>keyboard_arrow_down</i></button>
                     <div className='dropdown__content'>
                         <a href='#/'>Week</a>
                         <a href='#/'>Mount</a>

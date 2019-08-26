@@ -8,14 +8,14 @@ const Explanation = () => {
                 <p className='text__comment'>
                     Business goals should always be Specific,<br/>
                     Measurable and Achievable.</p>
-                <a className='text__link' href='/a'>learn more  ></a>
+                <a className='text__link' href='/#'>learn more  ></a>
             </div>
             <div className='explanation__symbol explanation__symbol--orange'>
-                <i className='material-icons'>pie_chart</i>
+                <i className='material-icons'style={{fontSize:'1.5rem'}}>pie_chart</i>
                 <span>Graph</span>
             </div>
             <div className='explanation__symbol explanation__symbol--blue'>
-                <i className='material-icons'>cloud_queue</i>
+                <i className='material-icons' style={{fontSize:'1.5rem'}}>cloud_queue</i>
                 <span>Cloud</span>
             </div>
         </div>

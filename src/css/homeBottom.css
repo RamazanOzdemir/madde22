@@ -80,6 +80,7 @@
     color: #fff;
     padding: 0;
     margin: 0 1rem;
+    cursor: pointer;
   
      
   }
@@ -87,6 +88,7 @@
     color: #bebfc0;
     padding: 0;
     margin: 0 1rem;
+    cursor: pointer;
   }
   .bottom__start{
     display: flex;
@@ -111,6 +113,7 @@
     height: 3.43rem;
     width: 10.75rem;
     text-align: center;
+    font-size: 1rem;
     padding: auto;
     background: #ff6f47;
     outline: none;
