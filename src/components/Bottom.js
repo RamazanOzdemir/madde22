@@ -24,7 +24,7 @@ const Bottom = () => {
                     <div>
                         <h2>{percent}%</h2>
                         <div className='progressBar'>
-                            <div className='percent' style={{width:percent}} ></div>
+                            <div className='percent' style={{width:`${percent}%`}} ></div>
                         </div>
                         <div className='right__option'>
                             <div className={isArc?'right__option--active':'right__option--not'}

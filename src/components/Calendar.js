@@ -11,16 +11,16 @@ const Calendar = () => {
     if(choice){
         const today = day.getDay()-1<0?6:day.getDay()-1;
         const todayMl = day.getTime();
-        for(let i = today; i>0 ; i--){
+        for(let i = today-1; i>=0 ; i--){
             day.setTime(todayMl-((today-i)*oneDay))
             result [i]=[days[i],day.getDate(),day.getTime()>=Date.now()-oneDay+10000,day.getMonth()];
         }
         for(let i = today; i<7 ; i++){
-            day.setTime(todayMl+((i)*oneDay))
+            day.setTime(todayMl+((i-today)*oneDay))
             result [i]=[days[i],day.getDate(),day.getTime()>=Date.now()-oneDay+10000,day.getMonth()];
         }        
     }
-
+    console.log(result);
     const selectDate = (e)=>{
         e.target.style.color= '#5c6aff';
         const progress = document.getElementsByClassName('progress__button');
