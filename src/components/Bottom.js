@@ -18,22 +18,25 @@ const Bottom = () => {
                 </div>
             </div>
             <div className='bottom__img'>
-                <img alt='' src='img/right.png' className='bottom__img'/>
+                <img alt='' src='img/background2.png' className='bottom__img'/>
+                <img alt='' src='img/men.png' className='bottom__men'/>
+                <img alt='' src='img/arm.png' className='bottom__arm'/>
+                <img alt='' src='img/ball.png' className='bottom__ball'/>
                 <div className='bottom__right'>
-                    <h3>SMART progress</h3>
+                    <h3 style={{fontSize:'1.4em'}}>SMART progress</h3>
                     <div>
-                        <h2>{percent}%</h2>
+                        <h2 style={{fontSize:'1.2em'}}>{percent}%</h2>
                         <div className='progressBar'>
                             <div className='percent' style={{width:`${percent}%`}} ></div>
                         </div>
                         <div className='right__option'>
                             <div className={isArc?'right__option--active':'right__option--not'}
                                 onClick={()=>{setAct(true)}}>
-                                Archived<br/>{isArc?<i className='material-icons'style={{fontSize:'0.5rem'}}>lens</i>:null}
+                                Archived<br/>{isArc?<i className='material-icons'style={{fontSize:'0.5em'}}>lens</i>:null}
                             </div>
                             <div className={!isArc?'right__option--active':'right__option--not'}
                                 onClick={()=>{setAct(false)}}>
-                                Active<br/>{!isArc?<i className='material-icons'style={{fontSize:'0.5rem'}}>lens</i>:null}
+                                Active<br/>{!isArc?<i className='material-icons'style={{fontSize:'0.5em'}}>lens</i>:null}
                             </div>
                         </div>
                     </div>

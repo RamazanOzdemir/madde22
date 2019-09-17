@@ -3,6 +3,7 @@ import SearchBar from '../components/SearchBar';
 import Calendar from '../components/Calendar';
 import Explanation from '../components/Explanation';
 import Bottom from '../components/Bottom';
+import User from '../components/User';
 
 const Home = () => {
     return (
@@ -10,10 +11,7 @@ const Home = () => {
             <div className='home__top'>
                 <SearchBar/>
                 <i className='material-icons notification'>notifications_none</i>
-                <div className='user'>
-                    <img alt='' src='img/avatar.png' className='user__avatar'/>
-                    <span className='user__name'>Boniface Esanji</span>
-                </div>
+                <User/>
             </div>
             <div className='home__midle'>
                 <div>

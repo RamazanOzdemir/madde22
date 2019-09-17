@@ -11,11 +11,11 @@ const Explanation = () => {
                 <a className='text__link' href='/#'>learn more  ></a>
             </div>
             <div className='explanation__symbol explanation__symbol--orange'>
-                <i className='material-icons'style={{fontSize:'1.5rem'}}>pie_chart</i>
+                <i className='material-icons'style={{fontSize:'1.5em'}}>pie_chart</i>
                 <span>Graph</span>
             </div>
             <div className='explanation__symbol explanation__symbol--blue'>
-                <i className='material-icons' style={{fontSize:'1.5rem'}}>cloud_queue</i>
+                <i className='material-icons' style={{fontSize:'1.5em'}}>cloud_queue</i>
                 <span>Cloud</span>
             </div>
         </div>

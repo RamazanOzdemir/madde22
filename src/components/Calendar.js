@@ -13,14 +13,13 @@ const Calendar = () => {
         const todayMl = day.getTime();
         for(let i = today-1; i>=0 ; i--){
             day.setTime(todayMl-((today-i)*oneDay))
-            result [i]=[days[i],day.getDate(),day.getTime()>=Date.now()-oneDay+10000,day.getMonth()];
+            result[i]=[days[i],day.getDate(),day.getTime()>=Date.now()-oneDay+10000,day.getMonth()];
         }
         for(let i = today; i<7 ; i++){
             day.setTime(todayMl+((i-today)*oneDay))
-            result [i]=[days[i],day.getDate(),day.getTime()>=Date.now()-oneDay+10000,day.getMonth()];
+            result[i]=[days[i],day.getDate(),day.getTime()>=Date.now()-oneDay+10000,day.getMonth()];
         }        
     }
-    console.log(result);
     const selectDate = (e)=>{
         e.target.style.color= '#5c6aff';
         const progress = document.getElementsByClassName('progress__button');
@@ -51,14 +50,14 @@ const Calendar = () => {
                 </div>
                 <div style={{display:'flex'}}>
                     <button className='option__button option__button--left' onClick={prevWeek}>
-                        <i className='material-icons' style={{fontSize:'1rem'}}>keyboard_arrow_left</i>
+                        <i className='material-icons' style={{fontSize:'1em'}}>keyboard_arrow_left</i>
                     </button>
                     <button className='option__button option__button--right' onClick={nextWeek}>
-                        <i className='material-icons' style={{fontSize:'1rem'}}>keyboard_arrow_right</i>
+                        <i className='material-icons' style={{fontSize:'1em'}}>keyboard_arrow_right</i>
                     </button>
                 </div>
                 <div className='option__dropdown'>
-                    <button className='dropbtn'>Week <i className='material-icons' style={{fontSize:'1rem'}}>keyboard_arrow_down</i></button>
+                    <button className='dropbtn'>Week <i className='material-icons' style={{fontSize:'1em'}}>keyboard_arrow_down</i></button>
                     <div className='dropdown__content'>
                         <a href='#/'>Week</a>
                         <a href='#/'>Mount</a>
@@ -69,9 +68,10 @@ const Calendar = () => {
                 <div className='progress'>
                     {choice?
                         result.map(day=>(
-                            <div key={''+day[0]+day[1]} className={`progress__date ${day[2]?null:'progress__date--disabled'}`}
-                             onClick={selectDate}>
-                                {day[0]}<br/><br/> {day[1]}
+                            <div key={''+day[0]+day[1]} className={day[2]?'progress__date' :'progress__date--disabled'}
+                             onClick={day[2]?selectDate:null}>
+                                <p style={{margin:'0'}}>{day[0]}</p>
+                                <p style={{marginTop:'1em'}}>{day[1]}</p> 
                             </div>
                         ))    
                     :null}
